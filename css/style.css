@@ -44,13 +44,13 @@ a.skip:focus{
   border: 2px solid black;
 }
 
-footer{
+/*/footer{
   background-color: black;
   color: white;
   padding: 30px;
   text-align: center;
 }
-
+/*/
 
 
 @-webkit-keyframes logo_wiggle{
@@ -257,6 +257,17 @@ body {
   background-color: #fff;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
+.bg {
+  background-image: url('../images/sky.jpg');
+
+  /* Full height */
+  height: 100%;
+
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 *,
 *::before,
@@ -274,25 +285,28 @@ a {
 #coding {width: 400px;
   height: auto;
 }
-#clipper {width: 300px;
+#clipper {width: 600px;
   height: auto;
 }
 #sfpic {width: 300px;
   height: auto;
 }
-#towerbridge {width: 300px;
+#towerbridge {width: 50vw;
   height: auto;
 }
 #bd {width: 300px;
   height: auto;
 }
-#kawhi {width: 300px;
+#kawhi {width: 600px;
   height: auto;
 }
 #msu {width: 400px;
   height: auto;
 }
 #uofm {width: 400px;
+  height: auto;
+}
+#wood {width: 100vw;
   height: auto;
 }
 
