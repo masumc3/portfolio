@@ -443,3 +443,7 @@ a.skip:focus{
   color: black;
   text-decoration-style: solid;
 }
+#currentpage {color: black;
+  text-decoration: underline;
+
+}
