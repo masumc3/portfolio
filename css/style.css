@@ -279,31 +279,58 @@ a {
   color: #fff;
 }
 
-#versacepic {width: 250px;
+#versacepic {width: 200px;
   height: auto;
 }
-#coding {width: 400px;
+#car {width: 300px;
   height: auto;
 }
-#clipper {width: 600px;
+#coding {width: 300px;
+  height: auto;
+}
+#clipper {width: 400px;
+  height: auto;
+}
+#swish {width: 400px;
+  height: auto;
+}
+#nq {width: 350px;
   height: auto;
 }
 #sfpic {width: 300px;
   height: auto;
 }
-#towerbridge {width: 50vw;
+#sfnight {width: 400px;
+  height: auto;
+}
+#towerbridge {width: 300px;
+  height: auto;
+}
+#sf2 {width: 300px;
+  height: auto;
+}
+#ny {width: 300px;
+  height: auto;
+}
+#macisland {width: 300px;
+  height: auto;
+}
+#bigben {width: 300px;
+  height: auto;
+}
+#yosemite {width: 300px;
   height: auto;
 }
 #bd {width: 300px;
   height: auto;
 }
-#kawhi {width: 600px;
+#kawhi {width: 400px;
   height: auto;
 }
-#msu {width: 400px;
+#msu {width: 350px;
   height: auto;
 }
-#uofm {width: 400px;
+#uofm {width: 350px;
   height: auto;
 }
 #wood {width: 100vw;
@@ -440,7 +467,7 @@ a.skip{
 
 a.skip:focus{
   top:20px;
-  color: yellow;
+  color: blue;
   text-decoration-style: solid;
 }
 #currentpage {color: black;
