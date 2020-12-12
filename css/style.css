@@ -1,249 +1,84 @@
-/*
-body{
-  font-family: 'Raleway', sans-serif;
-  margin: 0;
-  padding: 0;
-  font-size: 16pt;
-  background-image: url('../images/concrete_seamless.png');
+* {
+	margin: 0;
+	padding: 0;
 }
 
-h1{
-  font-size: 2em;
-  text-align: center;
-  line-height: 2;
-}
-
-h2{
-  font-size: 1.5em;
-  text-align: center;
-  padding: 5px;
+body {
+	font-size: 62.5%;
+	font-family: Helvetica, sans-serif;
+	background: url(images/stripe.png) repeat;
 }
 
 p {
-  padding: 0 30px;
+	font-size: 1.3em;
+	margin-bottom: 15px;
 }
 
-a.skip{
-  background: white;
-  left: 0;
-  padding: 6px;
-  position: absolute;
-  top: -40px;
-  -webkit-transition: top 1s ease-out;
-  transition: top 1s ease-out;
-  z-index: 1;
+#page-wrap {
+	width: 660px;
+	background: white;
+	padding: 20px 50px 20px 50px;
+	margin: 20px auto;
+	min-height: 500px;
+	height: auto !important;
+	height: 500px;
 }
 
-a.skip:focus{
-  top:20px;
-  color: black;
-  text-decoration-style: solid;
+#contact-area {
+	width: 600px;
+	margin-top: 25px;
 }
 
-*:focus{
-  border: 2px solid black;
+#contact-area input, #contact-area textarea {
+	padding: 5px;
+	width: 471px;
+	font-family: Helvetica, sans-serif;
+	font-size: 1.4em;
+	margin: 0px 0px 10px 0px;
+	border: 2px solid #ccc;
 }
 
-/*/footer{
+#contact-area textarea {
+	height: 90px;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+	border: 2px solid #900;
+}
+
+#contact-area input.submit-button {
+	width: 100px;
+	float: right;
+}
+
+label {
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 100px;
+	padding-top: 5px;
+	font-size: 1.4em;
+}
+
+footer{
   background-color: black;
   color: white;
   padding: 30px;
   text-align: center;
 }
-/*/
 
-
-@-webkit-keyframes logo_wiggle{
-  from{
-       width: 25px;
-
-   }
-   to{
-       width: 425px;
-   }
-
-
+@media screen and (prefers-reduced-motion: reduce) {max-width: 700px
+html{
+  scroll-behavior: smooth;
 }
 
-@keyframes logo_wiggle{
-  from{
-       width: 25px;
-
-   }
-   to{
-       width: 425px;
-   }
-
-}
-
-#logo{
-  animation-duration: 15s;
-  animation-name: logo_wiggle;
-
-
+@media screen {max-width: 320px
+   {
+    font-size: 1.45rem
 }
 
 
-.pricing{
-    min-height: 500px;
-    display:flex;
-     justify-content:center;
-     align-items:center;
 
-
-}
-
-.card {
-  margin: 12px;
-  background: #fff;
-  border-radius: 7px;
-  padding: 0 0 50px 0;
-
-  flex-basis:400px;
-
-}
-
-.card > header{
-  background: #288080;
-  border: 2px solid #45ADAD;
-  padding: 20px 0;
-  border-radius: 7px 7px 0 0;
-
-}
-
-.card > ul{
-  list-style: none;
-  padding: 0;
-}
-
-.card > ul li {
-  width: 90%;
-  margin: 20px auto;
-}
-
-.card button{
-  width: 90%;
-  height: 40px;
-  border: 0;
-  margin-left: 12px;
-  border-radius: 7px;
-  background: #288080;
-  color: white;
-  font-size: 1em;
-}
-
-.card h3{
-  font-size: 4em;
-  color: white;
-  text-align: center;
-}
-
-.card_big{
-  -webkit-transform: initial;
-          transform: initial;
-}
-
-
-.gallery{
-  min-height: 600px;
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-}
-
-.gallery > img{
-  border: 10px #50C7C7 solid;
-  margin: 10px;
-  width: 300px;
-}
-
-
-header{
-  background: #fff;
-  border-bottom: 3px solid #50C7C7;
-  display:flex;
-  justify-content:center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav_links{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    list-style: none;
-}
-
-.nav_item a{
-  color: black;
-  text-decoration: none;
-}
-
-.nav_item a:hover, a:focus{
-  color: #50C7C7;
-  text-decoration: underline;
-  -webkit-text-decoration-style: dotted;
-          text-decoration-style: dotted;
-}
-
-@media screen and (min-width: 850px){
-
-
-  .card {
-  flex-basis:225px;
-  }
-
-  .card_big{
-    -webkit-transform: scaleX(1.12);
-            transform: scaleX(1.12);
-  }
-
-
-  header{
-  justify-content: left;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-  }
-
-  .nav_links{
-    align-self:flex-end;
-    flex-basis:100%;
-    flex-flow:column;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .nav_item a{
-    padding: 10px;
-
-
-}
-
-@media print {
-  .gallery {
-  display: none;
-}
-#gallery {
-display: none;
-}
-  .card {
-    flex-basis: 200px;
-  }
-  body{
-    background-image:url("");
-    }
-}
-
-@media screen and (prefers-reduced-motion: reduce){
-#logo {animation: none;}
-}
-*/
-/* newcode */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 html {
   font-size: 100%;
@@ -283,9 +118,13 @@ a {
   height: auto;
 }
 #car {width: 300px;
+  /* vertical-align: middle; */
+  overflow: auto;
   height: auto;
 }
 #coding {width: 300px;
+  overflow: auto;
+  /* vertical-align: middle; */
   height: auto;
 }
 #clipper {width: 400px;
@@ -294,47 +133,65 @@ a {
 #swish {width: 400px;
   height: auto;
 }
-#nq {width: 350px;
+#nq {width: 450px;
   height: auto;
 }
-#sfpic {width: 300px;
+#sfpic {width: 375px;
   height: auto;
 }
 #sfnight {width: 400px;
   height: auto;
 }
-#towerbridge {width: 300px;
+#towerbridge {width: 375px;
+  height: auto;
+
+}
+#sf2 {width: 375px;
   height: auto;
 }
-#sf2 {width: 300px;
+#ny {width: 375px;
   height: auto;
 }
-#ny {width: 300px;
+#macisland {width: 375px;
   height: auto;
 }
-#macisland {width: 300px;
+#bigben {width: 375px;
   height: auto;
 }
-#bigben {width: 300px;
+#yosemite {width: 375px;
   height: auto;
 }
-#yosemite {width: 300px;
-  height: auto;
-}
-#bd {width: 300px;
+#bd {width: 375px;
   height: auto;
 }
 #kawhi {width: 400px;
   height: auto;
 }
-#msu {width: 350px;
+#msu {width: 450px;
   height: auto;
 }
-#uofm {width: 350px;
+#uofm {width: 450px;
   height: auto;
 }
 #wood {width: 100vw;
   height: auto;
+}
+body, html {
+  height: 100%;
+}
+
+.parallax {
+
+  background-image: url("car_parallax.jpg");
+
+
+  height: 100%;
+
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 a {
@@ -472,5 +329,25 @@ a.skip:focus{
 }
 #currentpage {color: black;
   text-transform: uppercase;
+}
 
+.flip-card {
+  background-color: transparent;
+  width: 30px;
+  height: 20px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+
+.flip-card-inner {
+  position: relative;
+  width: 30px;
+  height: 20px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.box{
+  overflow: auto;
 }
